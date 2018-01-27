@@ -1,12 +1,12 @@
 package rmugattarov.app;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import rmugattarov.beans.impl.HelloStringProvider;
+import rmugattarov.beans.api.StringProvider;
 
 public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("generators.xml");
-        HelloStringProvider helloStringProvider = (HelloStringProvider) context.getBean("HelloStringProvider");
+        StringProvider helloStringProvider = (StringProvider) context.getBean("HelloStringProvider");
         System.out.println(helloStringProvider.getString());
     }
 }
