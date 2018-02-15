@@ -10,9 +10,9 @@ import javax.inject.Named;
 @Component
 public class InjectStringProvider implements StringProvider {
     @Inject
-    private NumeralProvider numeralProvider;
+    private IntGenerator intGenerator;
 
     public String getString() {
-        return "Injected " + numeralProvider.getInt();
+        return "Injected " + intGenerator.getInt();
     }
 }

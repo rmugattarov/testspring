@@ -8,7 +8,7 @@ import rmugattarov.beans.api.StringProvider;
 
 @Component
 public class AutowiredStringProvider implements StringProvider {
-    @Autowired
+//    @Autowired
     private NumeralProvider numeralProvider;
 
     public String getString() {

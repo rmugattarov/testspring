@@ -5,7 +5,7 @@ import rmugattarov.beans.api.NumeralProvider;
 
 import java.util.Random;
 
-@Component
+@Component("intGenerator")
 public class IntGenerator implements NumeralProvider {
     public int getInt() {
         return new Random().nextInt();
